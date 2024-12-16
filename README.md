@@ -14,10 +14,5 @@ This repository contains my personal projects, including scripts, websites, and 
 - Python, Pandas
 - React.js, Node.js
 
-## How to Run the Projects
-1. Clone the repository: `git clone https://github.com/username/portfolio.git`
-2. Navigate to the project folder.
-3. Follow the specific instructions in each folder to run or view the project.
-
 ## License
 MIT License
