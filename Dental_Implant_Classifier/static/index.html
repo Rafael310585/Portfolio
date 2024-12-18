@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de Implantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css"> <!-- Inclui o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <img src="https://live.staticflickr.com/65535/53959242468_d1958ca3f5_b.jpg" alt="Logo" class="logo">
+        <h1>IDENTIFICAR IMPLANTE</h1>
+
+        <!-- Botão estilizado para input de arquivo -->
+        <label for="uploadImage" class="custom-file-upload">ESCOLHER IMAGEM</label>
+        <input type="file" id="uploadImage" accept="image/*">
+
+        <!-- Área de arrastar e soltar -->
+        <div class="drop-zone" id="dropZone">
+            Arraste e solte uma imagem aqui ou clique para escolher
+        </div>
+
+        <!-- Imagem de pré-visualização e botão de recortar -->
+        <img id="preview" style="display:none;" />
+        <button id="cropAndPredictBtn" style="display:none;">Recortar e Identificar</button>
+
+        <!-- Tabela para exibir os resultados -->
+        <table id="resultTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody">
+                <!-- Os resultados serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.js"></script>
+    <script src="/static/script.js"></script> <!-- Inclui o arquivo JavaScript -->
+</body>
+</html>

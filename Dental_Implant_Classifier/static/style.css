@@ -1,0 +1,116 @@
+/* Centralizar o conteúdo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    background-color: #333; /* Cor de fundo do container */
+}
+
+.logo {
+    width: auto;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #99cccc;
+    margin-bottom: 20px;
+}
+
+img {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#preview {
+    max-width: 100%;
+    max-height: 300px; /* Ajusta o tamanho máximo da imagem de pré-visualização */
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    display: none; /* Esconde o input file original */
+}
+
+.custom-file-upload {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Espaço abaixo do botão */
+    font-weight: bold;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura no hover */
+}
+
+.drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drop-zone.dragover {
+    background-color: #e6f0ff;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #4CAF50;
+}
